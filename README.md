@@ -93,7 +93,7 @@ CREATE TABLE Customer (
     DateOfBirth DATE
 );
 ```
-###Account Table
+### Account Table
 ```sql
 CREATE TABLE Account (
     AccountNumber CHAR(16) PRIMARY KEY CHECK (AccountNumber REGEXP '^[0-9]{16}$'),   
@@ -107,7 +107,7 @@ CREATE TABLE Account (
 );
 ```
 
-###Transaction Table
+### Transaction Table
 ```sql
 CREATE TABLE Transaction (
     TransactionID INT AUTO_INCREMENT PRIMARY KEY,
