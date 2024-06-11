@@ -20,58 +20,7 @@ This project is a simple distributed banking system implemented in Golang. The s
 - Go (Golang) installed on your machine.
 - MySQL database installed and running.
 
-  # Requirements for Distributed System Project using Golang
-
-## Functional Requirements
-
-### Master Server
-1. **Database Connection**: The master server must connect to a MySQL database.
-2. **Listening for Connections**: The master server must listen for incoming TCP connections from slave clients.
-3. **Handling Requests**: The master server must handle various requests from slave clients:
-   - **Login**: Validate account number and password.
-   - **Account Creation**: Create a new account with provided details.
-   - **Balance Inquiry**: Retrieve the balance for a given account.
-   - **Deposit**: Update the balance for a given account with the deposited amount.
-   - **Withdrawal**: Update the balance for a given account after withdrawal.
-4. **Database Operations**: The master server must perform necessary database operations for each request, including:
-   - Inserting and retrieving records from `Customer`, `Account`, and `Transaction` tables.
-   - Updating account balances.
-
-### Slave Client
-1. **User Interaction**: The slave client must provide a user interface to interact with the banking system.
-2. **Connection to Master**: The slave client must connect to the master server via TCP.
-3. **Sending Requests**: The slave client must send requests to the master server based on user input:
-   - **Login**: Send account number and password to the master server.
-   - **Account Creation**: Send new account details to the master server.
-   - **Balance Inquiry**: Request balance for the logged-in account.
-   - **Deposit**: Send deposit amount to the master server.
-   - **Withdrawal**: Send withdrawal amount to the master server.
-4. **Receiving Responses**: The slave client must handle responses from the master server and display appropriate messages to the user.
-
-## Non-Functional Requirements
-
-1. **Security**: 
-   - Passwords should be securely stored and transmitted.
-   - Sensitive data should be handled appropriately to prevent unauthorized access.
-
-2. **Performance**:
-   - The system should handle multiple simultaneous connections efficiently.
-   - Database queries should be optimized for performance.
-
-3. **Reliability**:
-   - The system should handle and recover from errors gracefully.
-   - Connections between master and slave should be reliable and robust.
-
-4. **Scalability**:
-   - The system should be able to scale with an increasing number of slave clients.
-   - The database should handle a growing number of records without performance degradation.
-
-5. **Maintainability**:
-   - The codebase should be modular and well-documented.
-   - The system should be easy to maintain and extend.
-
-## Technical Requirements
-
+# Technical Requirements
 1. **Programming Language**: Go (Golang)
 2. **Database**: MySQL
 3. **Libraries**:
@@ -98,28 +47,6 @@ This project is a simple distributed banking system implemented in Golang. The s
     ```
 
 3. **Interaction**: Follow the prompts on the slave client to interact with the system.
-
-## Testing
-
-1. **Unit Testing**: Write unit tests for individual components to ensure they work as expected.
-2. **Integration Testing**: Test the interaction between master server and slave clients.
-3. **Performance Testing**: Ensure the system performs well under load.
-
-## Documentation
-
-1. **Code Comments**: Ensure all major functions and components are well-documented with comments.
-2. **User Guide**: Provide a user guide for setting up and using the system.
-3. **API Documentation**: Document the communication protocol between master server and slave clients.
-
-## Contribution Guidelines
-
-1. **Code Style**: Follow standard Go code style guidelines.
-2. **Pull Requests**: Submit pull requests for any enhancements or bug fixes.
-3. **Issue Tracking**: Use the issue tracker to report bugs or suggest features.
-
----
-
-This document outlines the requirements for building and running the distributed banking system using Golang. Ensure all functional and non-functional requirements are met to deliver a robust and efficient system.
 
 ### Installation
 
