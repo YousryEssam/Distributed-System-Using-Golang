@@ -12,7 +12,7 @@ This project is a simple distributed banking system implemented in Golang. The s
 ## Project Structure
 - `master.go`: Master server code that handles database connections and client requests.
 - `slave.go`: Slave client code that interacts with the master server to perform banking operations.
-- `database.sql`: SQL script to set up the required database and tables.
+- `database.txt`: SQL script to set up the required database and tables.
 
 ## Getting Started
 
@@ -80,20 +80,6 @@ This project is a simple distributed banking system implemented in Golang. The s
 
 3. **Interact with the Slave Client:**
     - Follow the on-screen prompts to login, create an account, check balance, deposit, or withdraw funds.
-
-## Example Interaction
---------------------------Welcome to ABC Bank-------------------------------
---->> Press 1 to login to your account.
---->> Press 2 to Create an account.
---->> Press 3 to Shutdown The System.
---->> Please Enter your account number :
---->> Please Enter your account password :
---------------------Successful login, welcome back.-------------------------
---->> Please Select what you want to do.
---->> Press 1 to see you balance.
---->> Press 2 to deposit.
---->> Press 3 to withdraw.
---->> Press on any other key to quit.
 
 ## Database Schema
 
