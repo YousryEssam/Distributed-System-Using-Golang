@@ -12,7 +12,7 @@ This project is a simple distributed banking system implemented in Golang. The s
 ## Project Structure
 - `master.go`: Master server code that handles database connections and client requests.
 - `slave.go`: Slave client code that interacts with the master server to perform banking operations.
-- `database.txt`: SQL script to set up the required database and tables.
+- `database.sql`: SQL script to set up the required database and tables.
 
 ## Getting Started
 
